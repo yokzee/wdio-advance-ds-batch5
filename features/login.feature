@@ -7,7 +7,7 @@ Feature: Login Test
     @positive @tc1
     Scenario Outline: Login Success
         And user input "<username>" as username and user input "<password>" as password
-        And user redirected to homepage
+        Then user redirected to homepage
         Examples:
             | username| password | 
             | standard_user  | secret_sauce  |
